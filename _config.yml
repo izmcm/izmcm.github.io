@@ -1,2 +1,12 @@
 theme: jekyll-theme-minimal
 title: Izabella Melo
+
+social-network-links:
+  email: "cmeloizabella@gmail.com"
+  github: izmcm
+  twitter: izmcm
+  medium: izmcm
+  linkedin: izabellacmelo
+  
+  exclude:
+  - README.md
