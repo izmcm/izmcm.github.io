@@ -4,6 +4,12 @@ I am a Software Engineer working with iOS fraud prevention at [AllowMe - Intelli
 
 Currently focused on studying and researching more about security on iOS devices. Learning about operating system architecture and exploring iOS applications from new perspectives.
 
-[![twitter](icons/icons8-twitter-60.png)](https://www.twitter.com)
+### Come with me ;)
+[![linkedin](icons/icons8-linkedin-30.png)](https://www.linkedin.com/in/izabellacmelo/)
+[![medium](icons/icons8-medium-monogram-30.png)](https://izmcm.medium.com/)
+[![twitter](icons/icons8-twitter-30.png)](https://twitter.com/izmcm)
+
+
+
 
 
