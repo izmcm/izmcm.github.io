@@ -1,6 +1,41 @@
-## E ai? Tudo bem?
+## Hey! What's up?
 
-### Meu nome é Izabella!    
-Sou Engenheira de Software trabalhando com prevenção à fraude em iOS no [AllowMe - Intelligence by Tempest](https://www.allowme.cloud/), formada em  desenvolvimento iOS na Apple Developer Academy e estudante de Engenharia da Computação na UFPE :)
+I am a Software Engineer working with iOS fraud prevention at [AllowMe - Intelligence by Tempest](https://www.allowme.cloud/), graduated in iOS development at the Apple Developer Academy and a Computer Engineering student at UFPE :)
 
-Conquistei os scholarships da Apple Worldwide Developers Conference 2019 (#WWDC19) e Grace Hopper Celebration 2020 (#GHC20). Além disso, fui uma das vencedoras do Swift Student Challenge 2020 e o primeiro lugar no OEA Cyberwomen Challenge Brazil 2019
+Currently focused on studying and researching more about security on iOS devices. Learning about operating system architecture and exploring iOS applications from new perspectives.
+
+<!-- Please don't remove this: Grab your social icons from https://github.com/carlsednaoui/gitsocial -->
+
+<!-- display the social media buttons in your README -->
+
+[![alt text][1.1]][1]
+[![alt text][2.1]][2]
+[![alt text][3.1]][3]
+[![alt text][4.1]][4]
+[![alt text][5.1]][5]
+[![alt text][6.1]][6]
+
+<!-- links to social media icons -->
+<!-- no need to change these -->
+
+<!-- icons with padding -->
+
+[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
+[2.1]: http://i.imgur.com/P3YfQoD.png (facebook icon with padding)
+[3.1]: http://i.imgur.com/yCsTjba.png (google plus icon with padding)
+[4.1]: http://i.imgur.com/YckIOms.png (tumblr icon with padding)
+[5.1]: http://i.imgur.com/1AGmwO3.png (dribbble icon with padding)
+[6.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
+
+
+<!-- links to your social media accounts -->
+<!-- update these accordingly -->
+
+[1]: http://www.twitter.com/carlsednaoui
+[2]: http://www.facebook.com/sednaoui
+[3]: https://plus.google.com/+CarlSednaoui
+[4]: http://carlsed.tumblr.com
+[5]: http://dribbble.com/carlsednaoui
+[6]: http://www.github.com/carlsednaoui
+
+<!-- Please don't remove this: Grab your social icons from https://github.com/carlsednaoui/gitsocial -->
