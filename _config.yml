@@ -1,1 +1,6 @@
 theme: jekyll-theme-tactile
+title: Hi, I'm Iza :)
+description: Software engineering, student and researcher
+
+github:
+  is_project_page: false
