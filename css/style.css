@@ -1,0 +1,47 @@
+*{
+    box-sizing:border-box;
+}
+.fab {
+    color: white;
+    margin: 0 10px;
+}
+
+.fab:hover {
+    color: #007bff;
+}
+body{
+    font-family:sans-serif;
+    line-height:1.33;
+    margin:0 auto;
+    width: 80%;
+    padding:1rem;
+}
+blockquote {
+    border-left: 4px solid;
+    margin: 2em 0 2em 2em;
+    padding: 2px 8px;
+}
+blockquote p {
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+img {
+    max-width: 100%;
+}
+pre {
+    border: 1px solid;
+    overflow: auto;
+    padding: 5px;
+}
+table {
+    text-align: left;
+    width: 100%;
+}
+nav {
+  border-bottom: 1px solid;
+  padding: 10px 0;
+}
+nav a:last-of-type {
+  float: right;
+}
