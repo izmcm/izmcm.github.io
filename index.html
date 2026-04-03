@@ -1,118 +1,355 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="dark light">
-    <link rel="icon" href="data:,">
-    <title>Izabella C. Melo</title>
-    <link href="/index.rss" type="application/rss+xml" rel="alternate" title="RSS feed for blog posts">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <style>
+/* Backbone CSS for Resume Template 1 */
+
+/* Basic */
+
+#vue-smart-pages-preview {
+  background-color: white;
+  color: black;
+  text-align: left;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+#vue-smart-pages-preview p,
+#vue-smart-pages-preview li,
+#vue-smart-pages-preview dl {
+  margin: 0;
+}
+
+/* Headings */
+
+#vue-smart-pages-preview h1,
+#vue-smart-pages-preview h2,
+#vue-smart-pages-preview h3 {
+  font-weight: bold;
+}
+
+#vue-smart-pages-preview h1 {
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+
+#vue-smart-pages-preview h2,
+#vue-smart-pages-preview h3 {
+  margin-bottom: 0.25em;
+  margin-top: 1.0em;
+  font-size: 1.2em;
+}
+
+#vue-smart-pages-preview h1,
+#vue-smart-pages-preview h2 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: darkgrey;
+}
+
+/* Lists */
+
+#vue-smart-pages-preview ul,
+#vue-smart-pages-preview ol {
+  padding-left: 1.5em;
+  margin: 0.2em 0 1.0em 0;
+}
+
+#vue-smart-pages-preview ul {
+  list-style-type: disc;
+}
+
+#vue-smart-pages-preview ol {
+  list-style-type: decimal;
+}
+
+/* Definition Lists */
+
+#vue-smart-pages-preview dl {
+  display: flex;
+}
+
+#vue-smart-pages-preview dl dt,
+#vue-smart-pages-preview dl dd:not(:last-child) {
+  flex: 1;
+}
+
+/* Tex */
+
+#vue-smart-pages-preview :not(span.katex-display) > span.katex {
+  font-size: 1em !important;
+}
+
+/* SVG & Images */
+
+#vue-smart-pages-preview svg.iconify {
+  vertical-align: -0.2em;
+}
+
+#vue-smart-pages-preview img {
+  max-width: 100%;
+}
+
+/* Header */
+
+#vue-smart-pages-preview .resume-header {
+  text-align: center;
+}
+
+#vue-smart-pages-preview .resume-header h1 {
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+#vue-smart-pages-preview .resume-header-item:not(.no-separator)::after {
+  content: " | ";
+}
+
+/* Citations */
+
+#vue-smart-pages-preview ul.crossref-list {
+  padding-left: 1.2em;
+}
+
+#vue-smart-pages-preview li.crossref-item p {
+  margin-left: 0.5em;
+}
+
+#vue-smart-pages-preview li.crossref-item::marker {
+  content: attr(data-caption);
+}
+
+#vue-smart-pages-preview sup.crossref-ref {
+  font-size: 100%;
+  top: 0;
+}
+
+/* Dark & print mode */
+
+.dark #vue-smart-pages-preview {
+  background-color: #334155;
+  color: #e5e7eb;
+}
+
+@media print {
+  #vue-smart-pages-preview {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .dark #vue-smart-pages-preview a {
+    color: black !important;
+  }
+}
+
+    /* Dynamic Styles */
+    body {
+      font-family: Verdana, HKST;
+      font-size: 12px;
+      background-color: #f5f5f5;
+      color: black;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    #vue-smart-pages-preview {
+      background-color: white;
+      width: 793px;
+      max-width: 100%;
+      padding: 55px 45px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+    }
+    
+    :not(.resume-header-item) > a {
+      color: #000000;
+    }
+    
+    h1, h2, h3 {
+      color: #000000;
+    }
+    
+    h1, h2 {
+      border-bottom-color: #000000;
+    }
+    
+    p, li {
+      line-height: 1.30;
+    }
+    
+    h2, h3 {
+      line-height: 1.50;
+    }
+    
+    dl {
+      line-height: 1.35;
+    }
+    
+    h2 {
+      margin-top: 5px;
+    }
+    
+    @media print {
+      body {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+      }
+      
+      #vue-smart-pages-preview {
+        width: 100%;
+        max-width: none;
+        box-shadow: none;
+        margin: 0;
+        padding: 55px 45px;
+      }
+      
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    }
+  
+  </style>
 </head>
-
-<main>
-<h1 id="name">Izabella C. Melo</h1>
-
-<p><strong>(iOS) Software Engineer &amp; (iOS) Security Enthusiast</strong><br> 
-cmeloizabella@gmail.com<br></p>
-
-<a href="https://www.linkedin.com/in/izabellacmelo/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-<a href="https://izmcm.medium.com/" target="_blank"><i class="fab fa-medium"></i></a>
-<a href="https://twitter.com/izmcm" target="_blank"><i class="fab fa-twitter"></i></a>
-<a href="https://github.com/izmcm" target="_blank"><i class="fab fa-github"></i></a>
-
-<h2 id="skills--languages">Skills &amp; Languages</h2>
-
-<p>I work officially as an iOS developer, using Swift daily. I have a strong iOS background, but I like to solve problems no matter what language they are in! I have solved problems in Objective-C, Javascript, Kotlin, and Python. I have also had limited exposure to C/C++, Golang, Julia, Haskell, etc.</p>
-
-<h2 id="experience">Experience</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Company</th>
-      <th>Duration</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Senior iOS Software Engineer</td>
-      <td>Serasa Experian</td>
-      <td>12/2023 - Now</td>
-    </tr>
-    <tr>
-      <td>iOS Software Engineer</td>
-      <td>AllowMe (Tempest Security Intelligence)</td>
-      <td>07/2020 - 12/2023</td>
-    </tr>
-    <tr>
-      <td>Teaching Assistant and Researcher</td>
-      <td>CIn - UFPE</td>
-      <td>03/2020 - 05/2021</td>
-    </tr>
-    <tr>
-      <td>iOS Developer</td>
-      <td>Apple Developer Academy | UFPE</td>
-      <td>03/2018 - 02/2020</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="education">Education</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Institution</th>
-      <th>Program</th>
-      <th>Duration</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Universidade Federal de Pernambuco</td>
-      <td>M.S. in Computer Science</td>
-      <td>09/2024 - Now</td>
-    </tr>
-    <tr>
-      <td>Universidade Federal de Pernambuco</td>
-      <td>B.SC. in Computer Engineering</td>
-      <td>01/2017 - 09/2024</td>
-    </tr>
-    <tr>
-      <td>The Cornell, Maryland, Max Planck Pre-doctoral Research School</td>
-      <td>Summer School, Emerging Research Trends in Computer Science</td>
-      <td>08/2022 - 08/2022</td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- <h2 id="publications">Publications</h2>
-
-<p>1: <strong>Potency-Based Heuristic Search with Randomness for Explicit Model Checking</strong><br>
-by E.G.Henriksen, A.M. Khorsid, E. Nielsen, Th. Risager, J. Srba, <strong>A.M. Stück</strong>, S. Sørensen<br>
-In Proceedings of the 29th International SPIN Symposium on Model Checking of Software (SPIN’23), volume 13872 of LNCS, pages 180–187, Springer-Verlag, 2023.<br>
-<a href="http://www.cs.aau.dk/~srba/files/HKNRSSS:SPIN:23.pdf">PDF</a>
-<a href="https://www.springer.com/gp/computer-science/lncs">©Springer-Verlag</a>
-<a href="https://link.springer.com/chapter/10.1007/978-3-031-32157-3_10">EE</a>
-<a href="https://homes.cs.aau.dk/~srba/srba.html#HKNRSSS:SPIN:23">BibTex</a></p> -->
-
-<h2 id="awards-and-honors">Awards and Honors</h2>
-
+<body>
+  <main id="vue-smart-pages-preview">
+<div class="resume-header"></div><h1>Izabella Melo</h1>
+<dl>
+<dt><span class="iconify" data-icon="charm:person"></span> <a href="https://izmcm.github.io/" target="_blank" rel="noopener">izmcm.github.io</a></dt>
+<dd><span class="iconify" data-icon="tabler:brand-github"></span> <a href="https://github.com/izmcm" target="_blank" rel="noopener">github.com/izmcm</a></dd>
+<dd><span class="iconify" data-icon="tabler:phone"></span> <a href="https://wa.me/5581997307749" target="_blank" rel="noopener">(+55) 81 99730-7749</a></dd>
+</dl>
+<dl>
+<dt><span class="iconify" data-icon="ic:outline-location-on"></span> Recife - PE, Brazil</dt>
+<dd><span class="iconify" data-icon="tabler:brand-linkedin"></span> <a href="https://www.linkedin.com/in/izabellacmelo/" target="_blank" rel="noopener">linkedin.com/in/izabellacmelo</a></dd>
+<dd><span class="iconify" data-icon="tabler:mail"></span> <a href="mailto:cmeloizabella@gmail.com">cmeloizabella@gmail.com</a></dd>
+</dl>
+<h2>Summary</h2>
+<p>Software Engineer Specialist and M.S. Candidate at CIn-UFPE, focused on Mobile Security and Reverse Engineering. With over 5 years of experience in the iOS ecosystem, I specialize in developing high-performance anti-fraud SDKs and identity verification solutions. A multi-award winner (including the Apple Swift Student Challenge and OEA Cyberwomen Challenge), I combine academic rigor with a language-agnostic problem-solving mindset to build resilient software architectures and mitigate complex fraud vectors.</p>
+<h2>Experience</h2>
+<dl>
+<dt><strong>SDK Engineer Specialist</strong></dt>
+<dd><strong>Serasa Experian</strong></dd>
+<dd><strong>Dec 2023 - Present</strong></dd>
+</dl>
 <ul>
-  <li>2021: Swift Student Challenge Winner (Apple)</li>
-  <li>2020: Grace Hopper Celebration Scholarship Winner (AnitaB.org)</li>
-  <li>2020: Swift Student Challenge Winner (Apple)</li>
-  <li>2019: 1st in OEA Cyberwomen Challenge Brazil 2019 (Organização dos Estados Americanos & Trend Micro)</li>
-  <li>2019: WWDC 19 Scholarship Winner (Apple)</li>
-  <li>2019: 2nd in MovileHack (Movile Group)</li>
+<li>Leading the technical evolution with a focus on performance, resilience and security of the anti-fraud SDK for iOS (Swift/ObjC), with cross-platform contributions to Android (Kotlin) and Web (JavaScript) versions.</li>
+<li>Actively investigate emerging mobile fraud vectors and attacker <em>modus operandi</em>, leading the development of security prototypes, such as a custom iOS virtual camera used to simulate video injection attacks, to validate and enhance the robustness of biometric and liveness detection.</li>
+<li>Spearheaded the integration of biometric liveness detection and automated document capture into the SDK, optimizing high-performance image processing and anti-spoofing measures to ensure secure and frictionless identity verification for enterprise-scale onboarding flows.</li>
+<li>Led technical war rooms for critical troubleshooting and high-priority fraud incidents, demonstrating rapid problem-solving skills and resilience under pressure while supporting enterprise clients during SDK integration.</li>
+<li><strong>Recognition for Technical Excellence:</strong> Honored with the &quot;One Experian Recognition (FY25)&quot;, receiving one individual and two team awards for &quot;above-the-curve&quot; performance and innovation across mission-critical identity and security initiatives.</li>
 </ul>
-
-<h2 id="posts">Posts</h2>
+<dl>
+<dt><strong>iOS SDK Engineer</strong></dt>
+<dd><strong>AllowMe - Tempest Security Intelligence</strong></dd>
+<dd><strong>Jul 2020 - Dec 2023</strong></dd>
+</dl>
 <ul>
-  <li>BBBot: Can robots vote for Big Brother? - <a href="https://izmcm.medium.com/bbbot-rob%C3%B4s-podem-votar-no-big-brother-4b88a9f0176e">[PT-BR]</a></li>
-  <li>How would your life be if the internet was made up of http://(brazilian)government sites? - <a href="https://izmcm.medium.com/como-seria-a-sua-vida-se-a-internet-fosse-feita-de-sites-do-http-governo-1b78daa5e25d">[PT-BR]</a></li>
-  <li>Developing apps that respect privacy - <a href="https://medium.com/cocoaheads-recife/desenvolvendo-apps-que-respeitam-a-privacidade-85a7dc598445">[PT-BR]</a></li>
+<li>Contributed to the design of the core iOS SDK (Swift/ObjC) utilizing SOLID principles and modular architecture, focusing on Device Intelligence and fingerprinting to identify high-risk devices and fraudulent patterns.</li>
+<li>Partnered with security consultants to perform mobile app pentesting, identifying vulnerabilities and implementing countermeasures directly into the SDK to prevent exploitation.</li>
+<li>Leveraged deep research into low-level APIs to design and implement advanced Jailbreak detection and device identification strategies, hardening the SDK against spoofing, tampering, and runtime manipulation.</li>
+<li>Collaborated on the development of a robust CI/CD pipeline that automates the full SDK lifecycle, from unit and instrumented testing on AWS Device Farm and static analysis via SonarQube, to the seamless automated deployment of releases through private repositories for Swift Package Manager (SPM) and CocoaPods.</li>
 </ul>
-</main>
-</body></html>
+<h2>Early Career &amp; Academic Projects</h2>
+<dl>
+<dt><strong>iOS Developer</strong></dt>
+<dd><strong>Apple Developer Academy - UFPE</strong></dd>
+<dd><strong>Mar 2018 - Feb 2020</strong></dd>
+</dl>
+<ul>
+<li>Developed five native iOS apps from ideation to App Store deployment, mastering Swift and Objective-C fundamentals, applying a multidisciplinary framework focused on Code, Design, and Innovation to solve complex problems through technology and user-centric solutions.</li>
+<li>Worked in cross-functional squads using Agile methodologies (Scrum) to drive rapid prototyping, iterative development, and high-quality technical documentation.</li>
+<li>Helped foster a community of interest around iOS security and reverse engineering by initiating research discussions that encouraged peers to explore system-level vulnerabilities and privacy beyond traditional app development at the Apple Developer Academy.</li>
+</ul>
+<dl>
+<dt><strong>Teaching Assistant &amp; Researcher</strong></dt>
+<dd><strong>CIn - UFPE</strong></dd>
+<dd><strong>2017 - Present</strong></dd>
+</dl>
+<ul>
+<li>Consistently served as a Teaching Assistant across different stages of the undergraduate curriculum, progressing from Introduction to Programming to Operating Systems and Computer Networks for over 150 students. Managed the design and evaluation of complex projects and low-level implementations in C/C++.</li>
+<li>Conducted academic research on iOS device privacy, investigating how the system handles sensitive data and identifying potential vulnerabilities in mobile communication infrastructures.</li>
+<li>Conducted a security research on commercial App Store apps to identify critical logic flaws in StoreKit implementations. Successfully developed proof-of-concepts (PoC) to bypass premium feature restrictions, exposing common integration errors and providing insights about that.</li>
+</ul>
+<h2>Education</h2>
+<dl>
+<dt><strong>M.S. in Computer Science</strong></dt>
+<dd><strong>Jul 2024 - Present</strong></dd>
+</dl>
+<dl>
+<dt>Centro de Informática -  Universidade Federal de Pernambuco</dt>
+<dd>Recife, PE - Brazil</dd>
+</dl>
+<dl>
+<dt><strong>Summer School, Emerging Research Trends in Computer Science</strong></dt>
+<dd><strong>Aug 2022</strong></dd>
+</dl>
+<dl>
+<dt>The Cornell, Maryland, Max Planck Pre-doctoral Research School</dt>
+<dd>Saarbrücken, Germany</dd>
+</dl>
+<dl>
+<dt><strong>B.Eng. in Computer Engineering</strong></dt>
+<dd><strong>Jan 2017 - Jan 2024</strong></dd>
+</dl>
+<dl>
+<dt>Centro de Informática -  Universidade Federal de Pernambuco</dt>
+<dd>Recife, PE - Brazil</dd>
+</dl>
+<h2>Skills</h2>
+<p><strong>Programming Languages:</strong></p>
+<p>Expert: <span class="iconify" data-icon="logos:swift"></span> Swift, <span class="iconify" data-icon="vscode-icons:file-type-objectivec"></span> Objective-C</p>
+<p>Proficient: <span class="iconify" data-icon="logos:kotlin-icon"></span> Kotlin, <span class="iconify" data-icon="logos:python"></span> Python, <span class="iconify" data-icon="logos:javascript"></span> JavaScript/<span class="iconify" data-icon="logos:typescript-icon"></span> TypeScript, <span class="iconify" data-icon="logos:c-plusplus"></span> C/C++</p>
+<p>Limited Exposure &amp; Academic: Golang, Julia, Haskell, Java</p>
+<p><strong>Tools and Frameworks:</strong>
+Security &amp; RE: Ghidra, Frida, Hopper Disassembler.<br>
+Infrastructure: AWS Device Farm, SonarQube, GitLab CI/CD, Git.<br>
+Distribution: Swift Package Manager (SPM), CocoaPods.</p>
+<p><strong>Languages:</strong> English (Intermediate), Portuguese (Native).</p>
+<h2>Awards and Honors</h2>
+<dl>
+<dt><strong>Winner</strong> One Experian Recognition - Individual &amp; Team, (Serasa Experian)</dt>
+<dd>2025</dd>
+</dl>
+<dl>
+<dt><strong>Winner</strong>, Swift Student Challenge (Apple)</dt>
+<dd>2020, 2021</dd>
+</dl>
+<dl>
+<dt><strong>Scholarship Winner</strong>, Grace Hopper Celebration (AnitaB.org)</dt>
+<dd>2020</dd>
+</dl>
+<dl>
+<dt><strong>Scholarship Winner</strong>, WWDC 19 Scholarship (Apple)</dt>
+<dd>2019</dd>
+</dl>
+<dl>
+<dt><strong>1st Place</strong>, OEA Cyberwomen Challenge Brazil (OAS &amp; Trend Micro)</dt>
+<dd>2019</dd>
+</dl>
+<dl>
+<dt><strong>2nd Place</strong>, MovileHack (Movile Group)</dt>
+<dd>2019</dd>
+</dl>
+
+<h2>Posts</h2>
+<ul>
+ <li>BBBot: Can robots vote for Big Brother? - <a href="https://izmcm.medium.com/bbbot-rob%C3%B4s-podem-votar-no-big-brother-4b88a9f0176e">[PT-BR]</a></li>
+ <li>How would your life be if the internet was made up of http://(brazilian)government sites? - <a href="https://izmcm.medium.com/como-seria-a-sua-vida-se-a-internet-fosse-feita-de-sites-do-http-governo-1b78daa5e25d">[PT-BR]</a></li>
+ <li>Developing apps that respect privacy - <a href="https://medium.com/cocoaheads-recife/desenvolvendo-apps-que-respeitam-a-privacidade-85a7dc598445">[PT-BR]</a></li>
+</ul>
+  </main>
+</body>
+</html>
