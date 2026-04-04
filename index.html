@@ -82,6 +82,12 @@
   flex: 1;
 }
 
+#vue-smart-pages-preview dl.contact-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
 /* Tex */
 
 #vue-smart-pages-preview :not(span.katex-display) > span.katex {
@@ -244,6 +250,43 @@
         flex: none;
       }
 
+      #vue-smart-pages-preview dl.education-title {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 0.8em;
+      }
+
+      #vue-smart-pages-preview dl.education-title dt,
+      #vue-smart-pages-preview dl.education-title dd {
+        flex: 1;
+      }
+
+      #vue-smart-pages-preview dl.education-details {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #vue-smart-pages-preview dl.education-details dt,
+      #vue-smart-pages-preview dl.education-details dd {
+        margin: 0;
+        padding: 0;
+      }
+
+      #vue-smart-pages-preview dl.contact-list {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin: 0;
+      }
+
+      #vue-smart-pages-preview dl.contact-list dt,
+      #vue-smart-pages-preview dl.contact-list dd {
+        display: block;
+        flex: none;
+        margin: 0;
+        padding: 0;
+      }
+
       #vue-smart-pages-preview ul,
       #vue-smart-pages-preview ol {
         padding-left: 1.2em;
@@ -255,14 +298,16 @@
 <body>
   <main id="vue-smart-pages-preview">
 <div class="resume-header"></div><h1>Izabella C. Melo</h1>
-<dl>
+<dl class="contact-list">
 <dt><span class="iconify" data-icon="charm:person"></span> <a href="https://izmcm.github.io/" target="_blank" rel="noopener">izmcm.github.io</a></dt>
-<dd><span class="iconify" data-icon="tabler:brand-github"></span> <a href="https://github.com/izmcm" target="_blank" rel="noopener">github.com/izmcm</a></dd>
-<dd><span class="iconify" data-icon="tabler:phone"></span> <a href="https://wa.me/5581997307749" target="_blank" rel="noopener">(+55) 81 99730-7749</a></dd>
+<dd><span class="iconify" data-icon="ic:outline-location-on"></span> Recife - PE, Brazil</dd>
 </dl>
-<dl>
-<dt><span class="iconify" data-icon="ic:outline-location-on"></span> Recife - PE, Brazil</dt>
+<dl class="contact-list">
+<dt><span class="iconify" data-icon="tabler:brand-github"></span> <a href="https://github.com/izmcm" target="_blank" rel="noopener">github.com/izmcm</a></dt>
 <dd><span class="iconify" data-icon="tabler:brand-linkedin"></span> <a href="https://www.linkedin.com/in/izabellacmelo/" target="_blank" rel="noopener">linkedin.com/in/izabellacmelo</a></dd>
+</dl>
+<dl class="contact-list">
+<dt><span class="iconify" data-icon="tabler:phone"></span> <a href="https://wa.me/5581997307749" target="_blank" rel="noopener">(+55) 81 99730-7749</a></dt>
 <dd><span class="iconify" data-icon="tabler:mail"></span> <a href="mailto:cmeloizabella@gmail.com">cmeloizabella@gmail.com</a></dd>
 </dl>
 <h2>Summary</h2>
@@ -313,27 +358,27 @@
 <li>Conducted a security research on commercial App Store apps to identify critical logic flaws in StoreKit implementations. Successfully developed proof-of-concepts (PoC) to bypass premium feature restrictions, exposing common integration errors and providing insights about that.</li>
 </ul>
 <h2>Education</h2>
-<dl>
+<dl class="education-title">
 <dt><strong>M.S. in Computer Science</strong></dt>
 <dd><strong>Jul 2024 - Present</strong></dd>
 </dl>
-<dl>
+<dl class="education-details">
 <dt>Centro de Informática -  Universidade Federal de Pernambuco</dt>
 <dd>Recife, PE - Brazil</dd>
 </dl>
-<dl>
+<dl class="education-title">
 <dt><strong>Summer School, Emerging Research Trends in Computer Science</strong></dt>
 <dd><strong>Aug 2022</strong></dd>
 </dl>
-<dl>
+<dl class="education-details">
 <dt>The Cornell, Maryland, Max Planck Pre-doctoral Research School</dt>
 <dd>Saarbrücken, Germany</dd>
 </dl>
-<dl>
+<dl class="education-title">
 <dt><strong>B.Eng. in Computer Engineering</strong></dt>
 <dd><strong>Jan 2017 - Jan 2024</strong></dd>
 </dl>
-<dl>
+<dl class="education-details">
 <dt>Centro de Informática -  Universidade Federal de Pernambuco</dt>
 <dd>Recife, PE - Brazil</dd>
 </dl>
@@ -342,14 +387,14 @@
 <p>Expert: <span class="iconify" data-icon="logos:swift"></span> Swift, <span class="iconify" data-icon="vscode-icons:file-type-objectivec"></span> Objective-C</p>
 <p>Proficient: <span class="iconify" data-icon="logos:kotlin-icon"></span> Kotlin, <span class="iconify" data-icon="logos:python"></span> Python, <span class="iconify" data-icon="logos:javascript"></span> JavaScript/<span class="iconify" data-icon="logos:typescript-icon"></span> TypeScript, <span class="iconify" data-icon="logos:c-plusplus"></span> C/C++</p>
 <p>Limited Exposure &amp; Academic: Golang, Julia, Haskell, Java</p>
-<p><strong>Tools and Frameworks:</strong>
-Security &amp; RE: Ghidra, Frida, Hopper Disassembler.<br>
-Infrastructure: AWS Device Farm, SonarQube, GitLab CI/CD, Git.<br>
-Distribution: Swift Package Manager (SPM), CocoaPods.</p>
+<p><strong>Tools and Frameworks:</strong></p>
+<p>Security &amp; RE: Ghidra, Frida, Hopper Disassembler.</p>
+<p>Infrastructure: AWS Device Farm, SonarQube, GitLab CI/CD, Git.</p>
+<p>Distribution: Swift Package Manager (SPM), CocoaPods.</p>
 <p><strong>Languages:</strong> English (Intermediate), Portuguese (Native).</p>
 <h2>Awards and Honors</h2>
 <dl>
-<dt><strong>Winner</strong>, One Experian Recognition - Individual &amp; Team, (Serasa Experian)</dt>
+<dt><strong>Winner</strong>, One Experian Recognition - Individual &amp; Team (Serasa Experian)</dt>
 <dd>2025</dd>
 </dl>
 <dl>
