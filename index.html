@@ -220,6 +220,35 @@
         margin: 0;
       }
     }
+
+    @media screen and (max-width: 640px) {
+      body {
+        padding: 8px;
+      }
+
+      #vue-smart-pages-preview {
+        padding: 20px 16px;
+      }
+
+      #vue-smart-pages-preview h1 {
+        font-size: 1.8em;
+      }
+
+      #vue-smart-pages-preview dl {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      #vue-smart-pages-preview dl dt,
+      #vue-smart-pages-preview dl dd:not(:last-child) {
+        flex: none;
+      }
+
+      #vue-smart-pages-preview ul,
+      #vue-smart-pages-preview ol {
+        padding-left: 1.2em;
+      }
+    }
   
   </style>
 </head>
